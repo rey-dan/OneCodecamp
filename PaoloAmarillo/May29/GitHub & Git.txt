@@ -1,0 +1,117 @@
+GIT- Version Control    ("") Sample 
+
+Collaborate with other Programmers
+
+cd - Change Directory "cd Documents/shaha"
+(..) - to go up "cd .."
+ls - list of items in Directory
+mkdir- Make a directory "mkdir test"
+touch "index.html" - Create a file
+atom index.html - Open with Code editor
+rm "index.html" - Remove file
+rmdir - Remove Directory
+
+Repositories "Repo"
+Containers of Projects
+
+Commits - Save Files that you can always return to. (Commit History) Tracks Every Revisions. 
+Modified- Changes files not Commited
+Staging Area- files to staging that you want to commit
+
+Creating Repository
+1. cd Documents/shasah
+2. git init -> initialize an empty directory.
+(exsistance of ".git" in folder will track any changes in folder)
+3. touch index.html (Touch only works on Mac, Linux, and Commander)
+
+Staging Files (it's a extra blanket of security, Review our changes before we commit, Split works into different commits)
+"atom" 
+if green file is motified
+
+git status- shows which file we change and staged files
+git add "index.html" - adds to stagging area (CHANGES TO BE COMMITED)
+git rm --cached "index.html" - Remove from staging area
+git add . - add all file that have changes to stagging area
+
+Commit
+
+git commit -m "descriptive message" -to commit changes
+git log - will show log of all the commits made
+git log --oneline - shorten the log to one line only
+
+How to rewind from commits 
+
+checkout commit (safe)
+
+Check the commit only from the point in your timeline
+
+git checkout "esdaf221" (unique code)
+
+git checkout master - to return master branch
+
+revert commit (normal)
+
+reverst back to the commit you want to go to. 
+
+git revert "21314fcq" - revert to commit you need to go to
+
+to exit screen "shift :" +"wq"
+does not delete but reverts to the commit you need
+
+reset commit (unsafe)
+
+permanently revert back to the commit you need to go to. 
+
+git reset  "sesc221" - deletes to go to you commit
+(does not delete text on editor only in log so if you have mistake you can re commit it again)
+
+git reset "sesc221" --hard 
+(will delete text also in editor)
+
+Branches
+can work on different branches seperately
+an isolated environment to test our code-- then merge to master branch
+
+git branch "name" - creates a branch
+git branch -a - to see all branch
+git checkout "name" - switch to branch
+git checkout master - switch to master branch
+git branch -d "name" - to delete the branch
+git checkout -b "name" - creates a branch ang checkout (switches you automatically)
+
+Merging branches
+
+Merging the changes in your branches to MASTER
+
+git merge "name" - to merge to Master branch
+
+conflict when merging because the main branch is modified and branches also have changes
+
+(git commit) - delete not needed codes. to merge both changes you need.
+
+Intro to Git hub
+
+work with other developers
+clone repository so that you can work on it remotely. Then update features.
+they can see the changes done.
+
+
+push local repository to remote repo
+
+git push urlForRepo Master - To push to gitHub 
+
+git remote add origin https://github.com/rey-dan/247Codecamp-Training.git
+(use an allias instead)
+
+git pull origin master- to merge the maaster to local update files
+
+
+
+Forking (For Open Source Projects)
+
+git clone urlLink - to clone to Directory
+
+
+
+
+
