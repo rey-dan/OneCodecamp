@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="cheatsheet_style.css" />
+</head>
+<body>
+    <h1>HTML CHEAT SHEET</h1>
+    <ol>
+        <li>
+            <p class="subtitle">HTML Tags<p></p>
+            <ul>
+                <li> <!-- Heading -->
+                    <p class="code">&lth1&gtHeading 1&lt/h1&gt</p>
+                    <p class="description">Defines a heading.</p>
+                </li>
+                <li> <!-- Paragraph -->
+                    <p class="code">&ltp&gtParagraph&lt/p&gt</p>
+                    <p class="description">Defines a paragraph.</p>
+                </li>
+                <li> <!-- Anchor -->
+                    <p class="code">&lta href="url" &gtAnchor&lt/a&gt</p>
+                    <p class="description">Creates a hyperlink to the assigned url in href.</p>
+                </li>
+                <li> <!-- Image -->
+                    <p class="code">&ltimg src="Image" /&gt</p>
+                    <p class="description">Inserts an image.</p>
+                </li>
+                <li> <!-- Unorderd List -->
+                    <p class="code">&ltul&gtUnordered List&lt/ul&gt</p>
+                    <p class="description">Defines an unordered list.</p>
+                </li>
+                <li> <!-- Ordered List -->
+                    <p class="code">&ltol&gtOrdered List&lt/ol&gt</p>
+                    <p class="description">Defines a list item.</p>
+                </li>
+                <li> <!-- List Item -->
+                    <p class="code">&ltli&gtList Item&lt/li&gt</p>
+                    <p class="description">Defines an unordered list.</p>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <p class="subtitle">HTML Tags<p></p>
+            <ul>
+                <li> <!-- id -->
+                    <p class="code">id</p>
+                    <p class="description">Identifies a unique element.</p>
+                    <p class="example">&lth1 id="element-id" &gtHeading 1&lt/h1&gt</p>
+                </li>
+                <li> <!-- class -->
+                    <p class="code">class</p>
+                    <p class="description">Identifies multiple elements with the same class.</p>
+                    <p class="example">&ltp class="element-class" &gtParagraph Sample&lt/p&gt</p>
+                </li>
+                <li> <!-- style -->
+                    <p class="code">style</p>
+                    <p class="description">Defines inline styles for an element. (e.g. color: red)</p>
+                    <p class="example">&ltp color: "blue" &gtParagraph Sample&lt/p&gt</p>
+                </li>
+                <li> <!-- src -->
+                    <p class="code">src</p>
+                    <p class="description">Specifies the source URL of an image.</p>
+                    <p class="example">&ltimg src="image.jpg" /&gt</p>
+                </li>
+                <li> <!-- href -->
+                    <p class="code">href</p>
+                    <p class="description">Specifies the target URL of a hyperlink.</p>
+                    <p class="example">&lta href="https://www.sampler.com" &gtSample&lt/a&gt</p>
+                </li>
+            </ul>
+        </li>
+        
+    </ol>
+    <h1>CSS CHEAT SHEET</h1>
+    <ol>
+        <li>
+            <p class="subtitle">CSS Selectors<p></p>
+            <ul>
+                <li>
+                    <p class="code">Element Selector</p>
+                    <p class="description">Selects elements based on their tag name.</p>
+                    <p class="example">p {}</p>
+                </li>
+                <li>
+                    <p class="code">Class Selector</p>
+                    <p class="description">Selects elements based on the value of their "class" attribute. The selector starts with a dot (.) followed by the class name.</p>
+                    <p class="example">.className {}</p>
+                </li>
+                <li>
+                    <p class="code">ID Selector</p>
+                    <p class="description">Selects a single element based on the value of its "id" attribute. The selector starts with a hash (#) followed by the ID name.</p>
+                    <p class="example">#idName {}</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p class="subtitle">CSS Box Model<p></p>
+            <ul>
+                <li> 
+                    <p class="code">Margin</p>
+                    <p class="description">Sets the outer spacing of an element.</p>
+                    <p class="example">margin: 10px;</p>
+                </li>
+                <li> 
+                    <p class="code">Padding</p>
+                    <p class="description">Sets the inner spacing of an element.</p>
+                    <p class="example">padding: 20px;</p>
+                </li>
+                <li> 
+                    <p class="code">Border</p>
+                    <p class="description">Defines the border properties of an element.</p>
+                    <p class="example">border: 1px solid black;</p>
+                </li>
+                <li> 
+                    <p class="code">Width</p>
+                    <p class="description">Sets the width of an element.</p>
+                    <p class="example">width: 200px;</p>
+                </li>
+                <li> 
+                    <p class="code">Height</p>
+                    <p class="description">Sets the height of an element.</p>
+                    <p class="example">height: 100px;</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p class="subtitle">CSS Positioning<p></p>
+            <ul>
+                <li> 
+                    <p class="code">Static</p>
+                    <p class="description">This is the default position value. Elements with position: static are positioned according to the normal flow of the document.</p>
+                    <p class="example">position: static;</p>
+                </li>
+                <li> 
+                    <p class="code">Relative</p>
+                    <p class="description">Elements with position: relative are positioned relative to their normal position in the document flow. You can use the top, right, bottom, and left properties to adjust the position relative to its normal position.</p>
+                    <p class="example">position: relative;</p>
+                </li>
+                <li> 
+                    <p class="code">Absolute</p>
+                    <p class="description">Elements with position: absolute are positioned relative to the nearest positioned ancestor (an ancestor element with a position value other than static) or the initial containing block if no positioned ancestor is found. Absolute positioned elements are taken out of the normal flow, and other elements will not be affected by them.</p>
+                    <p class="example">position: absolute;</p>
+                </li>
+                <li> 
+                    <p class="code">Fixed</p>
+                    <p class="description">Elements with position: fixed are positioned relative to the viewport, meaning they stay fixed in the same position even when the page is scrolled. Fixed positioned elements are also taken out of the normal flow.</p>
+                    <p class="example">position: fixed;</p>
+                </li>
+                <li> 
+                    <p class="code">Sticky</p>
+                    <p class="description">Elements with position: sticky are positioned based on the user's scroll position. It acts like a hybrid of relative and fixed positioning. When the user scrolls to a specific threshold, the element becomes sticky and remains in that position. Sticky positioning is often used for navigation menus.</p>
+                    <p class="example">position: sticky;</p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

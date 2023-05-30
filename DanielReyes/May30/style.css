@@ -1,0 +1,22 @@
+body, h1, p, img, a{
+    display: block;
+}
+
+body{
+    padding: 10px;
+    display: flex;
+    background-color: rgb(165, 238, 243);
+    flex-direction: column;
+}
+
+a {
+    text-align: center;
+    font-weight: 600;
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(117, 165, 22);
+    text-decoration: underline;
+}
