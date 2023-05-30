@@ -1,0 +1,172 @@
+
+Command Line Basics
+
+cd
+-used to move to another folder
+
+example:
+cd <another-folder>
+*this will transfer you to the another-folder
+
+mkdir
+-used to create a new folder
+
+example:
+mkdir <new-folder>
+*this will create a folder new-folder
+
+ls
+*this will list all files and folders in your current directory
+
+
+_________________________
+Git Command Basics
+
+git --version
+-Used to check if git is installed in your system and will also show the version of git installed in your system
+
+
+git config --global user.name "Sample Name"
+-Associates your name with the commits you make in your repositories
+
+
+
+git cofig --global user.email "sample@email.com"
+-Associates your email with the commits you make in your repositories
+
+
+git config user.name
+-Will check the current git username associated in your system
+
+git config user.email
+-Will check the current git email associated in your system
+
+
+git init
+-Used to initialize a new Git repository in a directory
+-Allows you to use git for your repo
+
+git status
+-Shows the current status of your Git repository
+-Will show your current branch
+-Will show staged or unstaged changes
+-Will show commit status
+
+git add
+-Used to stage changes in your Git repository. It prepares files for the next commit, allowing you to include them in the version history.
+
+git add <specific-file>
+-Will only stage changes in specific-file
+
+git add .
+-Will stage all changes in your git repository
+
+
+git rm <specific-file>
+-Will remove the staged changes in specific-file
+
+__________________________________________________
+How to create a new branch and make pull request
+
+Step 1: Make sure your master/main branch is updated
+
+*Go to your master branch
+git checkout master
+
+*Check branch status
+git status
+
+*Pull recent changes if the master branch is not updated
+git pull
+
+
+Step 2: Create a new branch
+git checkout -b new-branch
+
+Step 3: Stage your changes
+
+*To stage all changes
+git add .
+
+*To stage a specific file
+git add file-name
+
+Step 4: Commit changes in your new branch
+
+git commit -m "commit message"
+
+Step 5: Push your changes
+git push -u origin new-branch
+
+Step 6: Make a pull request in github
+
+____________________________________________
+Check status of commits
+
+git log
+-shows the details logs of commits
+
+
+git log --oneline
+-shows only commit message and commit codes
+
+____________________________________________
+Switching and creating branches
+
+
+git checkout branch-name
+-Transfer to other branch
+
+git checkout -b new-branch
+-Create a new branch, with switching to new branch
+
+git revert <commit-hash>
+-used to create a new commit that undoes the changes made in a previous commit
+sample: git revert as923dsf
+
+git reset branch-code --hard
+-Used to move the branch pointer to a specific commit and discard all subsequent commits and changes
+
+git branch new-branch
+-Creates a new branch, without switching to new branch
+
+git branch -a
+-Displays all branches
+
+git branch -d feature-1
+-deletes merged branch
+
+git branch -D feature-1
+-deletes unmerged branch
+
+_________________________
+Merging branch to master
+
+git checkout master
+-checkout to master
+
+git merge feature-c 
+merge branch, fix conflicts if any
+
+git remote add origin <remote-url>
+
+git push origin feature-branch
+-Used to push the local branch named "feature-branch" to the remote repository called "origin"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
