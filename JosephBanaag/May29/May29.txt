@@ -1,0 +1,104 @@
+🌐️ git
+	- save all your revision which you can access in any point in time.
+	- you will be able to restore your current application from the previous versions or continue with the current one. 
+	- it will make collaboration much convenient. 
+
+🌐️  github 
+	- this is an online hosting platform
+	- helps to collaborate with others more easily
+	- programs can be downloaded to any other machine and work on them 
+	- can update the program code and change the program
+	
+
+⚡️⚡️⚡️⚡️⚡️⚡️ GIT COMMANDS:
+
+
+	git --version / git -v
+		- this will check the version of git installed on your machine
+	
+	git config --global user.name 
+		- this will create your git username and your identifier for tracking purposes.
+		
+	git cofig --global user.email
+		- this will connect your local git directory to your hosting platform (github)
+	
+	git config user.name
+		- this will throw your username
+	git config user.email
+		- this will throw your email address
+	git config --list 
+		- this will show the list of configured information to  your git 
+	git init 
+		- this will initialized git on the selected folder and will start to monitor any changes that will happen on the directory
+	git config - configure the username and email address 
+	git init -  initialize the local git repository
+	git add - is use to add one or more staging files in the repository
+	git diff - is use to see the changes made to the file
+	git commit - is use to commit changes to head but not to the remote repository
+	git reset - is use to undo local changes to the state of the a git repository
+	git status -  is use to see the status of the directory for the files that has been added or created or deleted.
+	git merge -  is use to join branches into an active branch and combines multiple sequences of commits into a single branch
+	git push - is use to upload content from local repository to the remote repository
+	git pull - this will download the remote repository to the local repository
+	git fetch - downloads the content from the required remote repository
+	git pull - is used to fetch and merge changes from the remote repository to the local repository
+	rm -rf .git - is used to remove .git folder in a folder	
+	git log - to see the current commit in the repository that is not yet to be pushed. 
+	git log --oneline - this will show the summary of the commits
+	
+
+
+
+⚡️⚡️⚡️⚡️⚡️⚡️ MANAGING YOUR LOCAL DIR:
+
+	cd - this means change directory and should be written in small letters
+	cd .. - cd(space).. jumps two folders up
+	ls - this will list all the files in the selected folder
+	pwd - this will tell you your current directory path 
+	cd ~ - this will jumps to the main folder/home dir or drive c
+	mkdir - this will make directory to the selected folder
+	touch - will create a file name
+	rm - this will remove the file 
+	rmdir - this will remove the directory
+	
+	
+	📌️ git process
+		➡️ initialize the repository and monitor the changes from the time of committing using git init
+			➡️ add the changes inside the local repository to the staging area using git add . 
+				➡️ changes are still in the staging area if there has been no commit done in the repo yet.
+					➡️ git log to see the current commit yet to be pushed
+						➡️ git log --oneline to see summary of the commits
+							➡️
+
+
+	
+
+
+	
+checkout commit
+	- git checkout + commit id from git log 
+	- this will remove the selected commit form the log
+	j
+		📌️To undo the changes:
+			- git checkout master
+			- this will go to the master branch back from the checkout
+	
+Revert commit
+	- git revert + commit id from the git log
+	- this will remove the selected commit from the log
+	- it will go to a new terminal page and type :wq to go back to the main terminal
+	- it will also create a new commit and added it to the current commit log with // Revert ""// message
+	
+Reset commit
+	- git reset + commit id from the git log
+	- this will remove the commits from the log from the selected commit id
+	- the deleted commits can be added again by using git add .
+		- git reset + commit id --hard
+		- this will remove the commit and the changes in the EDI
+		- this cannot be reverted and the change that was removed cannot be added again
+		
+		example: 
+			git reset af6b84c --hard
+	
+	
+
