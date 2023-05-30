@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html style=" font-family:'Arial', 'helvetica neue' , helvetica, sans-serif">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="x-apple-disable-message-reformatting">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="telephone=no" name="format-detection">
+	<title>Bio</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+		body {
+			font-family: 'Montserrat', sans-serif;
+			padding: 0;
+			margin: 0;
+			background: #f7f5f5;
+		}
+
+		header {
+			background: transparent;
+			width: 100%;
+			padding: 19px 30px;
+
+		}
+
+		h2 {
+			margin: 0;
+			display: flex;
+			align-items: center;
+			color: #154c79;
+		}
+
+		header a {
+			padding: 10px 30px;
+			text-decoration: none;
+			color: #FFF;
+			width: min-content;
+			border: 1px solid transparent;
+			border-radius: 50px;
+			transition: all 0.13s ease;
+		}
+
+		header a:hover {
+			border: 1px solid #fff;
+
+		}
+
+		.profile-main {
+			margin-top: -245px;
+			padding: 0 30px;
+			display: inline-flex;
+			align-items: center;
+			color: #FFF;
+			grid-gap: 24px;
+			margin-bottom: 25px;
+
+		}
+
+		.profile-main img {
+			border-radius: 50%;
+			height: 300px;
+		}
+
+		.hero {
+			background: linear-gradient(#154c79, #000);
+			height: 400px;
+			margin-top: -58px;
+		}
+
+
+		.section {
+			padding: 12px 30px;
+			margin: 0 30px;
+			margin-bottom: 25px;
+			max-width: 1440px;
+			margin: auto auto 25px;
+			background: #FFF;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 10px;
+		}
+
+		.section img {
+			margin-right: 20px;
+		}
+
+		ul {
+			list-style: none;
+			font-size: 16px;
+			color: #000;
+			display: flex;
+			grid-gap: 10px;
+			flex-direction: column;
+		}
+
+		li {
+			padding: 15px 25px;
+			background: #eeeded;
+			border-radius: 10px;
+			font-weight: 500;
+
+		}
+
+		@media(max-width: 992px) {
+			.profile-main {
+				flex-wrap: wrap;
+				color: #000
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<a href="/htmlCheatsheet.html">HTML Cheat Sheet</a>
+		<a href="/cssCheatSheet.html">CSS Cheat Sheet</a>
+	</header>
+	<section class="hero"></section>
+	<section class="profile-main">
+		<img
+			src="https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg"
+			alt="Your Image">
+
+		<div class="details">
+			<h1>Ron Cabatuando</h1>
+			<p class="intro-paragraph">With the ability to craft immersive web applications using React, Node.js, Express,
+				and MongoDB, this tech virtuoso brings ideas to life with seamless integration and scalability.</p>
+			<p class="intro-paragraph">Step into the realm of digital mastery and meet an extraordinary individual - a Full
+				Stack MERN Developer and Web3 pioneer.</p>
+		</div>
+	</section>
+
+	<div class="section">
+		<h2><img width="50" height="50" src="https://img.icons8.com/ios/50/000000/drawing--v2.png" alt="drawing--v2" />
+			Hobbies</h2>
+		<ul>
+			<li>Programming</li>
+			<li>Console Gaming</li>
+			<li>Watching Netflix</li>
+		</ul>
+	</div>
+
+	<div class="section">
+		<h2><img width="50" height="50" src="https://img.icons8.com/wired/64/000000/like--v1.png" alt="like--v1" />
+			Favorites
+		</h2>
+		<ul>
+			<li>EATING!</li>
+			<li>PLAYING!</li>
+			<li>SLEEPING!</li>
+		</ul>
+	</div>
+</body>
+
+</html>
