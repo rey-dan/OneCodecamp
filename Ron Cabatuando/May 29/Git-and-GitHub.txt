@@ -1,0 +1,56 @@
+
+**************************************************
+*******************GIT & GITHUB*******************
+**************************************************
+
+Git: Git is a distributed version control system that allows multiple developers to collaborate on a project and track changes to source code.
+It provides a way to manage different versions of files, keep track of modifications, and handle collaboration among team members.
+
+GitHub: GitHub is a web-based hosting service that provides a platform for version control using Git.
+It allows developers to store and manage their Git repositories online. GitHub offers features for collaboration, code sharing, and project management.
+
+**************************************************
+Installation
+To install Git, visit the Git website at git-scm.com/downloads, select the appropriate download link for your operating system, and follow the installation process.
+
+**************************************************
+Git Commands (Setting up)
+To check if Git is installed on your system, open a terminal or command prompt and type "git --version".
+git config --global user.name ron062394
+git config --global user.email ron062394@gmail.com
+
+**************************************************
+Here are some basic CLI commands:
+1. 'cd myfolder': Change directory to the "myfolder" directory.
+2. 'ls': List the files and directories inside the current directory.
+3. 'mkdir directory_name': Create a new directory with the specified name.
+4. 'touch index.html': Create a new file named "index.html" in the current directory.
+5. 'rm index.html': Remove or delete the file named "index.html" from the current directory.
+
+**************************************************
+Git is a distributed version control system that operates on the concept of repositories (repos). Here's how Git works:
+1. Repository (Repo): A repository is a container that holds all the files, folders, and the complete history of changes for a particular project. It can be seen as a project folder that Git tracks.
+2. Local and Remote Repositories: Git allows you to have both local and remote repositories. The local repository resides on your computer and contains the complete project history, whereas the remote repository is hosted on a server (e.g., GitHub, GitLab) and serves as a central location for collaboration and backup.
+3. Working Directory: When you clone or initialize a repository, Git creates a working directory on your local machine. This directory represents the current state of the project, containing the actual files and folders you can work with.
+4. Staging Area (Index): Git has a staging area, also known as the index, where you can selectively choose which changes you want to include in the next commit. You can add or remove files from the staging area to control what gets committed.
+5. Commits: Git stores the project's history as a series of commits. Each commit represents a snapshot of the project at a specific point in time. It includes a unique identifier, author information, a message describing the changes, and a reference to the parent commit.
+6. Branches: Git allows you to create branches, which are separate lines of development within a repository. Branches enable parallel work on different features, bug fixes, or experiments. You can switch between branches, create new branches, and merge changes from one branch to another.
+7. Push and Pull: To synchronize changes between your local repository and a remote repository, you can use Git's push and pull commands. Push sends your local commits to the remote repository, while pull fetches and integrates changes from the remote repository into your local repository.
+8. Merge and Resolve Conflicts: When merging branches or integrating changes from multiple contributors, conflicts may arise if the changes overlap. Git provides tools to resolve conflicts manually by making decisions on conflicting changes and merging them together.
+
+**************************************************
+'git init': Initializes a new Git repository in the current directory.
+'git status': Shows the current status of the repository, including any changes made to files.
+'git add .': Adds all modified and new files in the current directory to the staging area, preparing them for the next commit.
+'git rm --cached <file>': Removes a file from the staging area but keeps it in the working directory.
+'git commit -m "This is my first commit"': Creates a new commit with the changes from the staging area and attaches a descriptive message to it.
+'git log --oneline': Displays a condensed log of commit history, showing each commit's unique identifier and message in a single line.
+'git checkout <uid>': Switches the repository to a specific commit or branch indicated by its unique identifier (UID).
+'git revert <uid>': Creates a new commit that undoes the changes made in a specific commit, indicated by its unique identifier (UID).
+':wq': This is not a Git command but rather a command used in some text editors (e.g., Vim) to save and exit the file being edited.
+'git reset <uid> --hard': Resets the repository to a specific commit, discarding all changes and resetting both the working directory and staging area to match the specified commit.
+Please note that some commands, like git checkout, git revert, and git reset, should be used with caution as they modify the repository's history and can be irreversible. Always ensure you have a backup or are working on a separate branch when using such commands.
+**************************************************
+
+
+
