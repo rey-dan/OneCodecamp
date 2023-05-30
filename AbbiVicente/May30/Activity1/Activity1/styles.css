@@ -1,0 +1,36 @@
+* {
+	background-color: cornsilk;
+}
+
+p {
+	color: red;
+}
+
+#para2 {
+	color: blue;
+}
+
+.heading {
+	color: green;
+}
+
+p,
+#para2 {
+	font-size: 20px;
+}
+
+h1 .heading {
+	font-style: italic;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	background-color: brown;
+}
+
+a:active {
+	color: violet;
+}
