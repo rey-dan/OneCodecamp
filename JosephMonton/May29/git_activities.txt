@@ -1,0 +1,181 @@
+GitHub - web-based hosting service for version control.
+
+
+
+Git - distributed version control system which is installed in our own computers. We will use this to interact with our Github repositories.
+
+- system records changes to our files over time.
+
+- can recall specific version file.
+
+- lets people collaborate on a project by having them have their on files of the project locally.
+
+
+Git Commands: 
+
+BASIC COMMANDS
+
+TOUCH <file_name> - Create a new file. Needs to declare the file extension when you create your file. Ex. mytext.txt
+
+NANO <file_name> - Edit a file on Git Bash. Opens editing mode.
+
+CD <folder_name> - moves you one folder forward, or if you input the whole directory, will redirect you to that directory.
+
+CD .. - moves you one folder/directory backwards/up.
+
+LS/DIR - lists all the contents of the directory
+
+MKDIR - creates a new folder/directory.
+
+code . - opens VS code for that directory.
+
+code <file_name> - opens VS code for that specific file.
+
+RM <file_name> - removes/deletes that file.
+
+RMDIR <directory> - removes a folder.
+
+shift + colon : wq - go out of text editor
+
+
+SETTING UP GIT
+
+git config --global user.name <username> -> sets up your user globally.
+
+git config --global user.email <user_email> -> sets up your email globally.
+
+git config --list -> this command will display config settings on your git.
+
+
+CREATING NEW REPOSITORY ON LOCAL MACHINE
+
+git init - initialize an empty repository on the directory you are currently in.
+
+
+STAGING FILES USING GIT
+
+git status - shows all files that are on the staging area/all files that have changes made.
+
+git add ( . , <file_name>, <folder_name>) - adds the folders/files that you want to be committed to the repository (staging).
+
+git rm --cached <file_name> -> removes a file for staging.
+
+
+MAKING COMMITS USING GIT
+
+git commit -m "message here!" -> sets up commit message for the staged files. Make sure to make your message descriptive!
+
+git log - shows the log of different commits made.
+
+git log --oneline -> summarizes the log in one line. 
+
+
+
+UNDOING COMMITS USING GIT
+
+checkout commit - read-only, only checks what happened to the commit on that time
+
+revert commit - undo a particular commit but does not delete the commit chain
+
+reset commit - permanently takes you back in time. Deletes the commits.
+
+
+git checkout <log id>
+
+git checkout <branch name> - go back to recent commit
+
+git revert <log id>
+
+git reset <log id> 
+
+git reset <log id> --hard
+
+
+GIT BRANCHES
+
+master branch - represent the stable version of your code, this code will be the one to be published
+
+branches - allows you to add new features, edit stuff while not actually saving changes to your stable code, unless it is merged.
+
+
+git branch <name of branch> - creates a new branch to your repository
+
+git branch -a -> shows all the branch available on the repository and the repository you're currently in
+
+git checkout <branch name> -> switches to that branch 
+
+git branch -d <branch name> -> deletes branch. only works for merged branches
+
+git branch -D <branch name> -> deletes branch. works for branches that are not merged.
+
+git checkout -b <branch name> -> creates new branch and switches you to it.
+
+
+GIT MERGE BRANCHES
+
+important: you must be on the branch you want to merge to.
+
+git merge <name of branch> - merges the selected branch
+
+
+GITHUB
+
+- service that lets us set up hosted repositories.
+
+- central online repository which multiple teams-members could access
+
+
+CREATING A REPO ON GITHUB AND PUSH THE LOCAL REPO ON IT
+
+- create a new repo on github.com
+
+- copy url of the repo after creating
+
+- git status
+
+- git push <url> <branch>
+
+- git push <alias> <branch> 
+
+git remote add <alias> <url> -> gives alias of your url to your local repository. This makes it easier for us to push changes to cloud repository by not
+copying and pasting the url.
+
+
+CREATE A NEW REPO WITHOUT HAVING A LOCAL REPO
+
+IMPORTANT: You don't need to add alias on a cloned repo, it is already done when you cloned it.
+
+- follow the instructions on github
+
+- copy url on "clone or download" button
+
+git clone <url> -> clones repo on the local repository
+
+git remote -v -> shows the version of the remote repository that you cloned locally. Will also tell you the alias for that repo on your local machine.
+
+
+
+COLLABORATION USING GITHUB
+
+git pull origin master -> merges any changes made on master branch on cloud repo
+
+git push origin <branch name>
+
+go to github.com and your repository and click "compare and pull request"
+
+add stuff you want to add there and click "create pull request"
+
+click merge pull request
+
+
+FORKING ON GITHUB
+
+- fork repository on github
+
+- clone forked repository on github
+
+- copy url for clone
+
+git clone <url>
+
+
