@@ -1,0 +1,62 @@
+git --version - Used to check the version of git installed.
+
+git config --global user.name "name" Used to set a name for the user who did the changes to the file.
+
+git config --global user.name  Used to set the email on the device where the changes it going to commited from.
+
+cd - Used to change directories
+
+ls - used to display the contents of a folder.
+
+dir - same as ls, it is used to display the contents of a directory or folder.
+
+mkdir- Used for creating a new directory. 
+
+touch - Used for creating an empty file. Works in a Unix-based systems.
+
+rm - Used to delete a file.
+
+rmdir - Used for removing a directory.
+
+git init - used to initialize a Git repository in a directory.
+
+git status - used to check the status of repository gives you information about it.
+
+git add - used to add changes or files to the stagin area.
+
+git rm --cached <file> - used to remove the changes or files from the staging area.
+
+git add . - used to put all the changes or new files to the staging area.
+
+git commit -m "<message>" - used to make a new commit in a git repository. 
+
+git log --oneline - used to display all the commit history in a directory
+
+git checkout <id> - used to switch to a different version of a file or restore the changes of a file.
+
+git revert - used to undo the changes made in a directory. 
+
+git reset - used to go back to the commit where we want to reset the directory to.
+
+git reset <commit> --hard - Reseting the changes to a specific commit with the staging area and working directory reset.
+
+git branch -a - shows the list of the branches in a directory.
+
+git branch -b <branch-name> - used to create a new branch.
+
+git checkout <branch-name> - used to switch to a specific branch.
+
+git branch -d <branch-name> - used to delete a specific branch.
+
+git merge - used to merge the master branch with other branch in a directory.
+
+git push - used to push the change to a remote repository.
+
+git remote add <url name> - used to add a remote repository to a local repository
+
+git clone <url> - used to clone a repository to a local one from a remote one. 
+
+git remote -v - used to display the url of remote repository. 
+
+
+endd ============================================== end
