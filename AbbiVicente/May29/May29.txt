@@ -1,0 +1,181 @@
+--Git and Github--
+Stores any revision that you made from the start. Git is used on your local machine and github is used online,
+allowing us to collaborate with other programmers in our team, locally working on our own versions
+without messing up the main codebase.
+
+
+--Installing Git and Git commands--
+** We should install git in our local machine to be able to use them. https://git-scm.com/download
+** Here are a few git commands that we will mostly use:
+   $ cd <directory or folder you want to go to> - change directory ----------------------	(cd Documents)
+   $ ls - list contents of the current folder you're in ---------------------------------	(ls)
+   $ mkdir <name of folder that you want to make> - make directory ----------------------	(mkdir test)
+   $ touch <name of file plus extension name that you want to make> - create a file -----	(touch test.txt)
+   $ rm <name of file plus extension name that you want to make> - delete a file -------- 	(rm test.txt)
+   $ rmdir <name of folder that you want to delete> - delete directory ------------------	(rmdir test)
+
+
+--How Git Works--
+**Git can track changes you made over time while working on your own machine while still having access to the
+  changes  made by others.
+
+**Git uses a commit system to track and save changes to your code. More like a save point in games. You can go back
+  to it later if you decide you want to go back to that 'save point' anytime.
+
+**If you are working with other collaborators (which is what mostly happens) you can use git to share your code with them.
+
+**You need to create your own repository and push your changes to it and other developers will pull your changes from that.
+
+
+--Creating a Repository--
+**A repository is your project container that you want to track with git. It can be local (in your local machine) or remote
+ (online like github)
+
+**To create a repository just go to the folder that you want to work on, and type
+  $ git init
+on your gitbash. You can do this whether your project folder is empty or already has existing files in it.
+
+
+--Staging Files--
+**When we modify a file or made changes and we want to commit it, we need to pass through the staging phase first before committing.
+
+**To know which files are already currently in the staging area, ready to be committed, type in
+  $ git status
+
+**If you have untracked files, you will need to stage them first. Type in
+  $ git add <name of file>
+
+**When you check the status again, you will see the files that are ready to be committed.
+
+**If you mistakenly staged a file or simply changed your mind, you can remove them in the staging area by typing
+  $ git rm --cached <file>
+
+**If you want to stage all untracked files, you can type in
+  $ git add .
+
+
+--Making Commits--
+**To commit staged files, you need to type in
+  $ git commit -m "descriptive message"
+
+**As discussed before, commits are like save points, to see your "save points" or commit history, type in
+  $ git log
+
+**Now, it's going to be a little messy especially if you have a lot of commits. To see it in a cleaner view, type in
+  $ git log --oneline
+
+
+--Undoing Things--
+**There are 3 ways to undo your commits or see earlier versions before a certain commit.
+
+1. Checkout commit - if you want to see the state of the code in an earlier commit. This won't change anything in your code.
+   $ git checkout <unique id of the commit>
+   You can see the unique id when you check your logs.
+
+**To go back to the current status simply type in
+  $ git checkout master
+
+2. Git revert - if you want to delete a specific commit
+   $ git revert <unique id of commit>
+
+**To get out of the text presented to you, showing what has been done, press shift + : then press wq
+
+**You will still have access to that file you have reverted and it will still be in your logs. However, it will also show you that
+  you have reverted that file and you will have a new unique id for that action when you check your logs.
+
+3. Git reset - if you want to go back and work from a particular commit in time. Everything else after that commit will be gone.
+**Although you will still have the changes made, it will not be in the staging area.
+  $ git reset <unique id of commit>
+
+**If you want to completely delete everything else after a specific commit, you can type in
+  $ git reset <unique id of commit> --hard
+
+
+--Branches--
+**If we want to try new features on a project, we can have our isolated environment to try it in and if that is successful
+  we can add it in the main environment.
+
+**Branching also allows multiple developers to work on their own features in their own branch at their own time without
+  having to touch anything in the main branch.
+
+**To create a branch, type in your cli
+  $ git branch <name of the branch>
+
+**To see all the branches
+  $ git branch -a
+
+**To go to a specific branch
+  $ git branch <name of branch>
+
+**To delete a branch that is fully merged (we'll talk about merging later)
+  $ git branch -d <name of branch>
+
+**To delete a branch that is not merged 
+  $ git branch -D <name of branch>
+  (notice that capital D)
+
+**To create a new branch and go to that newly created branch
+  $ git checkout -b <name of branch>
+
+
+--Merging Branches (&conflicts)--
+**When we are ready to add the work that we did on our own branch, we can now merge it to the main branch.
+
+**When merging, we need to be in a branch we want to merge into. Usually, we want to merge into the main branch.
+  $ git checkout main
+
+**To merge
+  $ git merge <name of branch you want to merge into main branch>
+
+**If someone changed something in the main branch and committed it, and you try to merge your branch, there will be some conflicts.
+
+**If that happens, you need to change the things that you want to change that are in the main branch, add,
+  $ git commit
+  press shift + : then wq
+**That will now automatically merge your branch to the main.
+**Remember to work on your own branch and not the main branch.
+
+
+--Introduction to GitHub--
+**Central repository which team members can access online
+**To use github, you need a github account. 
+
+**To create a new repository, click "New" or if you're newly signed up, "Create New Repository"
+**Give your repository a name.
+**Then "Create Repository"
+
+1. Push Code to Github
+**You will see your link to your online repository either in HTTPS or SSH. Copy that, go to your cli, push your code by
+  $ git push <link of your online repo> <branch where you want to push on>
+
+**For us to easily push to that remote repository without having to paste the link all the time, we can have an alias for that link
+  $ git remote add origin <link of your online repo>
+
+**And now we can
+  $ git push origin main
+
+2. Clone a repository
+**In your github, find the repository that you want to clone and look for the "Clone or download" button.
+**Copy the URL, go to your cli, go to your desired folder and type in
+  $ git clone <URL of the repository you want to clone>
+
+
+--Collaborating on Github--
+**To fetch all of the code from the remote and merge it to our master branch:
+  $ git pull origin main
+
+**If you've made any changes that you want to be reviewed-- add, commit then:
+  $ git push origin <name of the branch>
+
+**In github, you will be able to see "Compare and pull request" to see the changes and see if that can be merged to the main branch.
+**You can assign reviewers to review your code, reviewers can add comments and decide if this should be merged to the main branch.
+
+**Remember when starting a new feature, always pull the main branch first in case anyone has made any changes so there will be no conflicts.
+
+
+--Forking (&Contributing)--
+**Another way to work on your own repository is forking. That creates a copy of one account's repository to your own account.
+**To do that, simply click the Fork button. You can now clone your forked repository to your local machine.
+
+**To add your changes to the main repository that you forked from, you can click "New pull request" -> "Create pull request"
+**Now the owner can decide if they want to merge this pull request or not.
