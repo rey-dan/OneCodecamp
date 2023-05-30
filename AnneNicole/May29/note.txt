@@ -1,3 +1,4 @@
+
 https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR
 
 
@@ -119,13 +120,34 @@ git checkout -b feature-1
 CONTINUE
 
 
+
+
 9. Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)
+
+1. Go to master branch (git checkout master)
+2. Git merge feature-a
+
+Recursive strategy
+
+
 
 10. Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub
 
+Git remote add origin https/jnkfsdf.com
+Git push origin master
+
+Git clone https/jndjkfsd.com
+Git push origin master
+
+
 11. Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub
 
+Git pull origin master
+Git push origin index.html
+Git push origin image-update
+
 12. Git & GitHub Tutorial for Beginners #12 - Forking (& Contributing)
+
 
 
 
