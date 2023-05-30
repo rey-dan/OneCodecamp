@@ -33,7 +33,7 @@ div {
     display: flex;
     margin: auto;
     height: 15em;
-
+    padding-top: 1.25em;
 }
 
 img {
@@ -87,7 +87,7 @@ li {
     list-style: circle;
 }
 
-button {
+.button {
     border-radius: 2px 2px 2px 2px;
     height: 2em;
     width: 6em;
