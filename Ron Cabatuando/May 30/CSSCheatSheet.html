@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html style=" font-family:'Arial', 'helvetica neue' , helvetica, sans-serif">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="x-apple-disable-message-reformatting">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="telephone=no" name="format-detection">
+	<title>CSS Cheat Sheet</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+		body {
+			font-family: 'Montserrat', sans-serif;
+			padding: 0;
+			margin: 0;
+			background: #f7f5f5;
+		}
+
+		header {
+			background: transparent;
+			width: 100%;
+			padding: 19px 30px;
+			background: linear-gradient(#154c79, #000);
+			height: 300px;
+			color: #FFF;
+			display: flex;
+			align-items: center;
+
+		}
+
+		main {
+			background: #FFF;
+			padding: 30px;
+			max-width: 1440px;
+			margin: 20px auto;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 20px;
+		}
+
+		h1 {
+
+			width: 100%;
+			text-align: center;
+		}
+
+		h2 {
+			margin-bottom: 10px;
+			color: #154c79;
+		}
+
+		code {
+			font-family: Consolas, monospace;
+			background-color: #f2f2f2;
+			padding: 2px 4px;
+
+		}
+
+		dl {
+			margin-bottom: 20px;
+			line-height: 36px;
+		}
+
+		dt {
+			font-weight: bold;
+			line-height: 36px;
+		}
+
+		dd {
+			margin-left: 20px;
+			line-height: 36px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>CSS Cheat Sheet</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Selectors</h2>
+			<code>
+        .class { }<br>
+        #id { }<br>
+        element { }<br>
+        element, element { }<br>
+        element.class { }<br>
+        element#id { }<br>
+        element[attr="value"] { }<br>
+        :hover { }<br>
+        :nth-child(n) { }<br>
+        ::after { }<br>
+        ::before { }<br>
+      </code>
+		</section>
+
+		<section>
+			<h2>Properties</h2>
+			<dl>
+				<dt>Color and Typography</dt>
+				<dd>
+					color: value;<br>
+					font-family: value;<br>
+					font-size: value;<br>
+					font-weight: value;<br>
+					text-align: value;<br>
+				</dd>
+
+				<dt>Layout and Box Model</dt>
+				<dd>
+					display: value;<br>
+					width: value;<br>
+					height: value;<br>
+					margin: value;<br>
+					padding: value;<br>
+					border: value;<br>
+					box-sizing: value;<br>
+				</dd>
+
+				<dt>Background and Borders</dt>
+				<dd>
+					background-color: value;<br>
+					background-image: value;<br>
+					background-position: value;<br>
+					background-repeat: value;<br>
+					border-radius: value;<br>
+					border-width: value;<br>
+					border-style: value;<br>
+					border-color: value;<br>
+				</dd>
+
+				<dt>Positioning and Flexbox</dt>
+				<dd>
+					position: value;<br>
+					top: value;<br>
+					left: value;<br>
+					right: value;<br>
+					bottom: value;<br>
+					float: value;<br>
+					clear: value;<br>
+					display: flex;<br>
+					flex-direction: value;<br>
+					justify-content: value;<br>
+					align-items: value;<br>
+				</dd>
+
+				<dt>Animations and Transitions</dt>
+				<dd>
+					animation-name: value;<br>
+					animation-duration: value;<br>
+					animation-timing-function: value;<br>
+					animation-delay: value;<br>
+					transition-property: value;<br>
+					transition-duration: value;<br>
+					transition-timing-function: value;<br>
+					transition-delay: value;<br>
+				</dd>
+			</dl>
+		</section>
+
+
+	</main>
+
+
+</body>
+
+</html>
