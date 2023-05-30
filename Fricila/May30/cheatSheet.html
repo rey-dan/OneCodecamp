@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Cheat Sheet</title>
+        <style>
+            body {
+  font-size: 22px;
+  font-family: Comic Sans MS;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.padding,
+.margin,
+.border,
+.content {
+  display: inline-block;
+  padding: 25px;
+  border: 1px solid #888;
+}
+
+.content {
+  background-color: #8BB5C0;
+}
+
+.padding {
+  background-color: #C2CF8A;
+}
+
+.border {
+  background-color: #FDDD9B;
+}
+
+.margin {
+  background-color: #F9CC9D;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+        </style>
+    </header>
+    <link rel="stylesheet" href="css/style.css">
+    <body>
+        <h1>&nbsp;HTML Cheatsheet</h1>
+
+            <h3 class="property-style">WHAT IS HTML AND CSS?</h3>
+            <img class="property-style" id="image" width="400" height="250" src="img/cheatSheet.png">
+            
+        <p class="property-style">
+            <span>HTML</span>
+            <br><br>
+            <b>Basic Tags</b>
+            <br>
+            &lt;html&gt;  - Creates an HTML document
+            <br>
+            &lt;head&gt;  - Sets off the title & other info that isn't displayed
+            <BR>
+            &lt;body&gt;  - Sets off the visible portion of the document
+            <br>
+            &lt;title&gt; - Puts name of the document in the title bar; when
+            bookmarking pages, this is what is bookmarked
+            <br>
+            <br>
+            <b>Formatting</b>
+            <br>
+            &lt;p&gt; - Creates a new paragraph
+            <br>
+            &lt;br&gt; - AInserts a line break (carriage return)
+        </p>
+        
+        <br>
+        <p class="property-style">
+            <span>CSS</span>
+            <br><br>
+            <b>Selectors</b>   
+            <br>
+            <span>.class - all elements with class</span>
+            <br>
+            <span>#id - element with ID</span>
+            <br><br>
+            <b>Pseudo classes</b>   
+            <br>
+            <span>:visited - visited link</span>
+            <br>
+            <span>:hover - mouse over link</span>
+            <br><br>
+            <b>The Box Model</b> 
+            <br>
+            <span>Padding - Clears an area around the content. The padding is transparent</span>
+            <br>
+            <span>Border - A border that goes around the padding and content</span>
+            <br>
+            <span>Margin - Clears an area outside the border. The margin is transparent</span>
+            <div class="container">
+                <h1>CSS Box Model</h1>
+                <div class="box-model">
+                  <div class="margin">
+                    <div class="border">
+                      <div class="padding">
+                        <div class="content">
+                          Content
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="box-sizing">
+                  <ul>
+                    <li>
+                      <span class="content"></span>
+                      Content
+                    </li>
+                    <li>
+                      <span class="padding"></span>
+                      Padding
+                    </li>
+                    <li>
+                      <span class="border"></span>
+                      Border
+                    </li>
+                    <li>
+                      <span class="margin"></span>
+                      Margin
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </p>
+        
+    </body>
+</html>
