@@ -10,7 +10,7 @@
 
 //1.
 
-let numbers = [2,4,7,8,10]
+let numbers = [20,0,7,8,10]
 
 //2.
 
@@ -18,7 +18,7 @@ function findMinMax(arr) {
     let min = arr[0]
     let max = arr[0]
 
-    for (let i = 1; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (arr[i] < min) {
             min = arr[i]
         } else if (arr[i] > max) {
@@ -38,8 +38,7 @@ function printEvenOdd(arr){
     for (let i = 0; i < arr.length; i++) {
         if ((arr[i] % 2) === 0) {
             console.log(arr[i], "is an even number.")
-        }
-        if ((arr[i] % 2) === 1) {
+        }else{
             console.log(arr[i], "is an odd number.")
         }
     }
@@ -77,4 +76,4 @@ function Divide(num1, num2){
     console.log(`${num1} / ${num2} =`, num1 / num2)
 }
 
-Divide(5,2)
+Divide(10,5)
