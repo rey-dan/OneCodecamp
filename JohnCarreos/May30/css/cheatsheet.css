@@ -3,9 +3,10 @@ img {
   height: auto;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#cheatsheet-title {
+  color: blue;
+}
+
+.cheatsheet-header {
+  color: red;
 }
