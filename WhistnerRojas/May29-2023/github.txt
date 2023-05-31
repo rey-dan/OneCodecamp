@@ -1,0 +1,56 @@
+git config --global user.name "yourname" 
+    //for tracking purposes  - to know whos changes it is.
+git config --global user.email "youremail@mail.com"
+
+git clone <repo_url>
+    //creates a copy of that repo to your local machine
+git init 
+    //to initialize git or start new local git repo.
+git remote add origin <repo_url>  
+    //adding a remote repo
+git add <file> 
+    //add your file to be stage.
+git add . 
+    //add all files to stage.
+git restore --staged <file>
+    //to unstage.
+git  rm --cached <filename> 
+    //removes the committed file from staging step.
+git reset HEAD <file> 
+    //to unstage.
+git commit -m "description" 
+    //create a save point / snapshot. -m // notes or message of that save point.
+git log
+    //shows different commits - author and date.
+git log --oneline 
+    //short version of logs.
+git checkout <commit_id> 
+    //checking back to that time of commit.
+git checkout 'branch' 
+    //going back to the head of the branch.
+git revert <commit_id> 
+    //reverting back to that commit.
+git reset <commit_id> 
+    //reseting back to target commit and deleting prior commits after that target commit.
+git reset <commit_id> --hard  
+    //discards any changes made after the specified commit.
+git status 
+    //checks your files and staging area or checks new changes.
+git push  
+    //submit or upload your files to github or remote repo.
+git branch  <branch_name> 
+    //create branch of someone else or your own repo.  
+git branch -a 
+    //shows all branches.
+git checkout <branch_name> 
+    //changes into target branch.
+git branch -d <branch_name>
+    //deletes a branch that has been merge to the main branch.
+git branch -D <branch_name>
+    //deletes branch that has not yet merge.
+git branch -b <branch_name>
+    //creates a branch and checksout at the same time.
+git merge <branch_name>
+    //you should be in the main branch when merging a branch.
+git pull or fetch
+    //downloads remote repo and merge with your working local copy.

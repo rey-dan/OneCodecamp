@@ -1,0 +1,43 @@
+Why use Git?
+
+-for developer collaboration to oversee team progress and code development
+-track changes to code files
+
+
+Git Commands:
+
+update
+
+git --version - to see current version of git installed in your pc
+git config --global user.name "sample" - use to setup git user name
+git config --global user.email "sample"  - use to setup git user email
+git init - initialized empty git repository / to create repository / use to make folder a git repository
+git status - to see if there are changes added or modified in files
+git add - to add change in the working directory for preparation to the staging area
+git commit -m - should be something descriptive and use to saves all current staged or recenlty git added files.
+git branch "sample" - to create new branch
+git branch -a - to see all branches created
+git checkout -b feature/[sample] - copied the main branch and create a clone branch and can work here so the main branch will not affect.
+git merge - allows to merge branches 
+git log - to see all commit history
+git log --oneline - to see the exact messages of commit or more condensed version of commit history
+git checkout - use to go to particular branch
+:wq - writing saving commit then exit
+git push origin [sample branch] - push all commited work files to specific branch
+git pull origin [sample branch] - merge master branch with current branch
+
+GitHub 
+ - service that set up hoseted repositories
+
+Others:
+
+ls - use to show all directory
+mkdir - use to create new folder/directory 
+touch - use to create new file
+
+GitHub:
+
+Create Pull Request - merge branch into the master branch
+
+
+
