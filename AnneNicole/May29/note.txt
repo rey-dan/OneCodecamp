@@ -1,0 +1,155 @@
+
+https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR
+
+
+1. Git & GitHub Tutorial for Beginners #1 - Why Use Git?
+
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage
+
+2. Git & GitHub Tutorial for Beginners #2 - Installing Git
+
+Git –version
+git config –global user.name sampleName
+git config –global user.email sampleEmail
+git config user.name "sampleName"
+In this case, you omit the --global flag, and Git will set the user.name configuration only for the current repository.
+
+git config user.name
+git config user.email
+
+cd . .
+dir (ls for windows)
+mkdir dirName
+touch index.html
+type nul > file.html
+This command creates an empty file named file.html by redirecting the output of the type nul command to the file using the > operator.
+
+Alternatively, if you are using Git Bash, you can also use the touch command, which is available as part of the Git Bash environment:
+
+touch file.html
+
+rm index.html
+rmdir testFolder
+
+
+
+
+
+
+
+
+
+3. Git & GitHub Tutorial for Beginners #3 - How Git Works
+
+.git is now hidden in the folder
+
+COMMITS - time machine? ^_^ HEROES Hiro!!
+What would you do if you have the power to control time?
+
+MODIFIED ===>> STAGING ===>> COMMIT (===>> PUSH)
+
+
+4. Git & GitHub Tutorial for Beginners #4 - Creating a Repository
+
+Copy paste file path
+cd filepath
+git init
+.git is now hidden in the folder to avoid accidental deletion
+
+
+
+5. Git & GitHub Tutorial for Beginners #5 - Staging files
+
+
+MODIFIED ===>> STAGING ===>> COMMIT (===>> PUSH)
+
+git status
+git add filename
+git rm –cached filename
+git add .
+
+-commit only at the most logical points
+-to easily track specific changes made for multiple revisions 
+
+
+
+
+
+
+
+
+
+
+
+
+6. Git & GitHub Tutorial for Beginners #6 - Making Commits
+
+-using git status you can see that git add . actually sees only the files which has changes made to it
+
+git add .
+git commit -m “descriptive message”
+
+Shift + : then wq
+git log
+git log –oneline
+
+
+7. Git & GitHub Tutorial for Beginners #7 - Undoing Things
+
+Git checkout 3432324
+Git checkout master
+
+git revert 565464
+Just added as a new change on git log, not removed
+
+git reset 54345645
+git reset 54345645 –hard
+
+
+
+8. Git & GitHub Tutorial for Beginners #8 - Branches
+
+Git branch feature-1
+git branch -a
+git checkout feature-1
+git branch -D feature-1
+
+git checkout -b feature-1
+
+
+CONTINUE
+
+
+
+
+9. Git & GitHub Tutorial for Beginners #9 - Merging Branches (& conflicts)
+
+1. Go to master branch (git checkout master)
+2. Git merge feature-a
+
+Recursive strategy
+
+
+
+10. Git & GitHub Tutorial for Beginners #10 - Introduction to GitHub
+
+Git remote add origin https/jnkfsdf.com
+Git push origin master
+
+Git clone https/jndjkfsd.com
+Git push origin master
+
+
+11. Git & GitHub Tutorial for Beginners #11 - Collaborating on GitHub
+
+Git pull origin master
+Git push origin index.html
+Git push origin image-update
+
+12. Git & GitHub Tutorial for Beginners #12 - Forking (& Contributing)
+
+
+
+
+
+
