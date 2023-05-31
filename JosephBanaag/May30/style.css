@@ -1,0 +1,128 @@
+/* global css variable for color naming convention */
+:root {
+    --green-800: #344e41;
+    --green-700: #3a5a40;
+    --green-600: #588157;
+    --green-500: #a3b18a;
+    --text: #dad7cd;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* this is a best practice to remove any default box model of the browser */
+    color: var(--text);
+}
+
+html {
+    background: linear-gradient(180deg, rgba(52, 78, 65, 1) 0%, rgba(58, 90, 64, 1) 50%, rgba(88, 129, 87, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+div {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    height: 15em;
+    padding-top: 1.25em;
+}
+
+img {
+    border: 2px solid #dad7cd;
+    margin: auto;
+    border-radius: 9999px;
+    height: 10em;
+    box-shadow: 1px 1px 15px #a3b18a;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+.im {
+    font-weight: lighter;
+}
+
+.aboutSelf {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe {
+    height: auto;
+    padding: 2em;
+    text-indent: 8em;
+    width: 75%;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 1em;
+}
+
+ul {
+    width: 30%;
+    margin: auto;
+}
+
+ul>h2 {
+    text-align: center;
+    margin: .5em;
+}
+
+li {
+    line-height: 2;
+    list-style: circle;
+}
+
+.button {
+    border-radius: 2px 2px 2px 2px;
+    height: 2em;
+    width: 6em;
+    background-color: var(--green-800);
+    color: var(--text);
+    transition: 200ms;
+}
+
+.cheatLink {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    align-items: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.githubProfile {
+    color: rgba(46, 41, 41, 0.849);
+    font-style: italic;
+    transition: 200ms;
+}
+
+.githubProfile:hover {
+    color: white;
+}
+
+footer {
+    text-align: center;
+}

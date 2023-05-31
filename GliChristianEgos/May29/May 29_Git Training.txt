@@ -1,0 +1,49 @@
+GIT FUNCTIONS
+
+git --version
+//It is used to see git version currently installed in PC.
+
+git config --global user.name "user_name"
+//It is used to setup git user name.
+
+git config --global user.email "user_email"
+//It is used to setup git user email.
+
+git init
+//It is used to initialize empty git repository.
+
+git status
+//It is used to see if there are modifications in files.
+
+git add
+//It is used to add changes in the working directory for preparation to the staging area.
+
+git commit -m "optional description"
+//It is used to commit recently added files with the option of comment.
+
+git branch "branch_name" 
+//It is used to create new branch.
+
+git branch -a
+//It is used to see all created branches
+
+git checkout -b "new_branch"
+//It is used to create new branch and automatically switch to that same branch.
+
+git merge
+//It is used to merge branches. 
+
+git log
+//It is used to see entire commit history.
+
+git log --oneline
+//It is used to see a more condensed version of commit history
+
+git checkout
+//It is used to switch to a particular branch
+
+git push origin [branch_name]
+//It is used to push all commited work files to specific branch
+
+git pull origin [sample branch]
+//It is used to merge origin branch with feature branch

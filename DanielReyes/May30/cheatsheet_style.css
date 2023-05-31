@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(191, 240, 240);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;   
+}
+
+.subtitle{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.code{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(0, 5, 54);
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.description{
+    font-weight: 400;
+    font-style: italic;
+    font-size: medium;
+}
+
+.example{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
