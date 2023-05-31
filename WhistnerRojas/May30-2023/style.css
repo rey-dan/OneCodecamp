@@ -48,9 +48,21 @@ button{
     border: 1px solid;
     border-radius: 20px;
     background-color: aqua;
+    margin-top: 20px;
 }
 
 button:hover{
     background-color: rgb(114, 255, 255);
     cursor: pointer;
+}
+
+.cheats ul{
+    display: inline;
+    margin: 0 20px;
+}
+
+.cheats{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
 }
