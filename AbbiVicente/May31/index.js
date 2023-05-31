@@ -13,8 +13,8 @@ function findMinMax(numbers) {
 			min = numbers[i];
 		}
 	}
-	console.log(`${max}`);
-	console.log(`${min}`);
+	console.log(`Maximum number is ${max}`);
+	console.log(`Minimum number is ${min}`);
 }
 findMinMax(numbers);
 
@@ -33,26 +33,29 @@ function printEvenOdd(numbers) {
 }
 printEvenOdd(numbers);
 
+let x = 13;
+let y = 7;
+
 // 4. add two numbers
 function Add(x, y) {
 	let sum = x + y;
 	console.log(`The sum of ${x} and ${y} is ${sum}`);
 }
-Add(7, 13);
+Add(x, y);
 
 // 5. subtract two numbers
 function Subtract(x, y) {
 	let difference = x - y;
 	console.log(`The difference of ${x} and ${y} is ${difference}`);
 }
-Subtract(20, 13);
+Subtract(x, y);
 
 // 6. multiply two numbers
 function Multiply(x, y) {
 	let product = x * y;
 	console.log(`The product of ${x} and ${y} is ${product}`);
 }
-Multiply(7, 13);
+Multiply(x, y);
 
 // 7. divide two numbers
 function Divide(x, y) {
@@ -60,4 +63,4 @@ function Divide(x, y) {
 	let remainder = x % y;
 	console.log(`The quotient of ${x} and ${y} is ${quotient} with a remainder of ${remainder}`);
 }
-Divide(20, 13);
+Divide(x, y);
