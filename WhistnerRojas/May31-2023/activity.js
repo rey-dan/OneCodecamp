@@ -74,11 +74,11 @@
 
 function Divide(num1, num2){
 
-    if((num1 / num2) % 2 === 0 ){
+    if((num1 / num2) % 2 === 0 || num1 / num2 === 1){
         console.log(`${num1} / ${num2} =`, num1 / num2)
     }else{
-        console.log(`${num1} / ${num2} =`, num1 / num2, `with a reminder of: ${(num1 / num2) % 1}`)
+        console.log(`${num1} / ${num2} =`, num1 / num2, `with ${(num1 / num2) % 1} reminder`)
     }
 }
 
-Divide(71,5)
+Divide(8,10)
