@@ -45,6 +45,7 @@
 	rm -rf .git - is used to remove .git folder in a folder	
 	git log - to see the current commit in the repository that is not yet to be pushed. 
 	git log --oneline - this will show the summary of the commits
+	git branch -a - this will show 
 	
 
 

@@ -21,11 +21,11 @@
 
 html {
     background: linear-gradient(180deg, rgba(52, 78, 65, 1) 0%, rgba(58, 90, 64, 1) 50%, rgba(88, 129, 87, 1) 100%);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
     font-family: 'Roboto Mono', monospace;
+    height: 100%
 }
 
 div {
@@ -125,4 +125,5 @@ a {
 
 footer {
     text-align: center;
+    margin-bottom: 2em;
 }
