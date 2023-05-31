@@ -57,6 +57,6 @@ Multiply();
 
 // 7.
 function Divide(a, b) {
-  console.log("remainder " + (10 % 6));
+  console.log("remainder is" + (10 % 6));
 }
 Divide();
